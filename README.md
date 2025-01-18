@@ -1,4 +1,6 @@
 # Projeto Farmácia - Desenvolvimento Web
+![GitHub watchers](https://img.shields.io/github/watchers/Giovani-Gomes/Projeto-Farmacia?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/Giovani-Gomes/Projeto-Farmacia)
 
 ## Descrição
 
@@ -7,6 +9,6 @@ Este projeto tem como objetivo a criação de um sistema web para uma farmácia,
 
 
 ## Tecnologias Utilizadas
-
-  - HTML5, CSS3, JavaScript
-
+<div>
+  <img src="https://skillicons.dev/icons?i=js,html,css," />
+</div>
