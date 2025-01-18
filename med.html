@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/med.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="headbar">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="doc.html">Doutor</a>
+            <a href="med.html">Medicina</a>
+            <a href="service.html">Serviço</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+
+        <div class="menubtn">
+            <button> Ajuda</button>
+        </div>
+
+        <div class="icon">
+            <div class="fa fa-search" id="search-btn" ></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-upload" id="up-btn" ></div>
+        </div>
+
+        <form class="search-form">
+            <input type="search" id="search-box" placeholder=" Digite algo....">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <img src="images/m10.png">
+                <i class="fa fa-trash"></i>
+                <div class="content">
+                    <h3>Comprimido de imunidade</h3>
+                    <span class="price">R$5.99</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/m2.png">
+                <i class="fa fa-trash"></i>
+                <div class="content">
+                    <h3>Protetor solar</h3>
+                    <span class="price">R$6.79</span>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/m4.png">
+                <i class="fa fa-trash"></i>
+                <div class="content">
+                    <h3>Creme Hidratante</h3>
+                    <span class="price">R$10.50</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="upload-form">
+            <input class="default-btn" type="file" hidden>
+            <div class="btn">
+                <button onclick="active()"     class="custom-btn">Carregar prescrição</button>
+            </div>
+            <div class="file-name">Nenhum arquivo escolhido</div>
+        </div>
+
+    </header>
+
+    <section class="top" id="top">
+        <div class="container">
+            <h1 class="heading">Bem-estar</h1><hr>
+        </div>
+
+
+        <div class="box-container">
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m7.png" >
+
+                    <div class="overlay">
+                        <p>É um produto de higiene único que mata 99,99% dos germes. Também mantém as mãos macias e hidratadas</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+
+                    <div class="type">
+                        <a href="#">Creme para mãos 500ml</a>
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+                </div>
+
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>
+        
+            </div>
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m3.png" >
+
+                    <div class="overlay">
+                        <p>A fórmula avançada facilita a limpeza profunda para ajudar o couro cabeludo a combater a caspa e a coceira</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+                    
+                    <div class="type">
+                        <a href="#"> Shampoo Condicionador </a>
+
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+
+                    
+                </div>
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>                
+        
+            </div>
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m4.png" >
+
+                    <div class="overlay">
+                        <p>As qualidades queratolíticas do creme hidratante podem suavizar a pele escamosa. Torna a pele saudável, totalmente protegida e brilhante</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+                    
+                    <div class="type">
+                        <a href="#"> Creme facial </a>
+
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+
+                    
+                </div>
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>                
+        
+            </div>
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m5.png" >
+
+                    <div class="overlay">
+                        <p>O sabão antibacteriano elimina germes e bactérias, proporcionando uma limpeza eficaz e proteção adicional. Ideal para uso diário, mantém as mãos e superfícies livres de impurezas, garantindo frescor e higienização.</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+                    
+                    <div class="type">
+                        <a href="#">Sabonete Antibacteriano </a>
+
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+
+                    
+                </div>
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>                
+        
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <section class="top" id="top">
+        <div class="container">
+            <h1 class="heading">Remédios</h1><hr>
+        </div>
+
+
+        <div class="box-container">
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m8.png" style="width: 90% ; padding-left: 15%;" >
+
+                    <div class="overlay">
+                        <p>Analgésico e antipirético amplamente utilizado para aliviar dores leves a moderadas e reduzir febre. É eficaz no tratamento de dores de cabeça, musculares, artrite e resfriados.</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+
+                    <div class="type">
+                        <a href="#">Paracetamol</a>
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+                </div>
+
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>
+        
+            </div>
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m9.png" >
+
+                    <div class="overlay">
+                        <p>A fórmula avançada facilita a limpeza profunda para ajudar o couro cabeludo a combater a caspa e a coceira</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+                    
+                    <div class="type">
+                        <a href="#"> Shampoo Condicionador </a>
+
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+
+                    
+                </div>
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>                
+        
+            </div>
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m10.png" >
+
+                    <div class="overlay">
+                        <p>As qualidades queratolíticas do creme hidratante podem suavizar a pele escamosa. Torna a pele saudável, totalmente protegida e brilhante</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+                    
+                    <div class="type">
+                        <a href="#"> Creme facial </a>
+
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+
+                    
+                </div>
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>                
+        
+            </div>
+            <div class="box">
+                <div class="slide-img">
+                    <img src="images/m11.png" >
+
+                    <div class="overlay">
+                        <p>O sabão antibacteriano elimina germes e bactérias, proporcionando uma limpeza eficaz e proteção adicional. Ideal para uso diário, mantém as mãos e superfícies livres de impurezas, garantindo frescor e higienização.</p>
+                        <a href="#" class="learn-btn"> Ler mais</a>
+                    </div>
+            
+                </div>
+
+               
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+        
+                <div class="detail-box">
+                    
+                    <div class="type">
+                        <a href="#">Sabonete Antibacteriano </a>
+
+                        <span>Nova chegada</span>
+                    </div>
+        
+                    <a href="#" class="price">R$ 20,00</a>
+
+                    
+                </div>
+                <a href="#" class="my-button" title="b-title">Encomende agora</a>
+
+                <a href="#" class="my-button" title="b-title">Para carrinho</a>                
+        
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <script type="text/javascript" src="script/med.js"></script>
+    
+</body>
+</html>

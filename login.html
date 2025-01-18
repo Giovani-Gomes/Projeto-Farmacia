@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+    
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+
+        <nav class="headbar">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="doc.html">Doutor</a>
+            <a href="med.html">Medicina</a>
+            <a href="service.html">Serviço</a>
+            <a href="contact.html">Contato</a>
+        </nav>
+
+        <div class="menubtn">
+            <button> Ajuda</button>
+        </div>
+    </header>
+    <div class="container" id="container">
+        <div class="form sign-up-container">
+            <form action="#">
+                <h1>Crie uma conta</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+    
+                <span> Crie uma conta</span>
+    
+                <div class="input-field">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+    
+                <button>Inscrever-se</button>
+            </form>
+        </div>
+
+    <div class="form sign-in-container">
+        <form action="#">
+            <h1>Login</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="#" class="social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+
+            <span> Login</span>
+
+            <div class="input-field">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="input-field">
+                <i class="fa fa-lock"></i>
+                <input type="password" placeholder="Password">
+            </div>
+            <a href="#">Esqueci sua senha</a>
+            <button>Inscrever-se</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Bem vindo de volta!</h1>
+                <p>Para se manter conectado conosco, faça login com suas informações pessoais</p>
+                <img src="images/s1.png" style="height: 25rem;width: 30rem; padding-top: 5%;">
+                <button class="btn" id="signIn">Entrar</button>
+            </div>
+    
+            <div class="overlay-panel overlay-right">
+                <h1>Olá usuário</h1>
+                <p>Insira seus dados pessoais e comece sua jornada conosco</p>
+                <img src="images/s3.png" style="height: 25rem;width: 30rem;">
+                <button class="btn" id="signUp">Entrar</button>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+
+    <script>
+
+        const singnUpButton = document.getElementById('signUp')
+        const singnInButton = document.getElementById('signIp')
+
+        singnUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        singnInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+
+    </script>
+</body>
+</html>
